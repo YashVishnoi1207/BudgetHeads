@@ -1,0 +1,230 @@
+html{
+    font-size: 62.5%;
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    background: url(../Img/Best-Technology-gadgets-to-Buy-In-2020.png);
+    background-repeat: no-repeat;   
+    background-size: cover;
+    overflow: hidden;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+
+/*login form css*/
+.form{
+    font-family: sans-serif;
+    position: relative;
+    /* z-index: 1; */
+    background: #ffffff;
+    opacity: 99%;
+    max-width: 30rem;
+    margin: auto;
+    padding: 1rem 4.5rem 2rem 4.5rem;
+    text-align: center;
+    border-radius: 1rem;
+}
+.form p{
+    font-size: 2.5rem;
+    padding: 0.1rem;
+    text-align: center;
+    color: #1A2930;
+}
+
+.form .heading{
+    color: #1A2930;
+    font-size: 2rem;
+    margin-bottom: 26px;
+    font-family: Montserrat,sans-serif;
+}
+
+.form input{
+    outline: 0;
+    border-radius: 1rem;
+    background: #F2F2F2;
+    width: 100%;
+    border: 0;
+    margin: 0 0 1.5rem;
+    padding: 1.5rem;
+    box-sizing: border-box;
+    font-size: 1.4rem;
+}
+
+.form textarea{
+    outline: 0;
+    border-radius: 1rem;
+    background: #F2F2F2;
+    width: 100%;
+    border: 0;
+    margin: 0 0 1.5rem;
+    padding: 1.5rem;
+    box-sizing: border-box;
+    font-size: 1.4rem;
+    font-family: sans-serif;
+}
+
+.form select{
+    outline: 0;
+    border-radius: 1rem;
+    background: #F2F2F2;
+    width: 100%;
+    border: 0;
+    margin: 0 0 1.5rem;
+    padding: 1.5rem;
+    box-sizing: border-box;
+    font-size: 1.4rem;
+    color: grey;
+}
+
+.form input:hover{
+    background-color: #D3F8F9;
+    transition: all 1s ease 0s;
+}
+
+.form select:hover{
+    background-color: #D3F8F9;
+    transition: all 1s ease 0s;
+}
+
+.form button{
+    position: relative;
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    overflow: hidden;
+    outline: 0;
+    border-radius: 1rem;
+    width: 100%;
+    border: 0;
+    padding: 1.5rem;
+    color: #2196f3;
+    font-size: 1.4rem;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.form button:hover{
+    color: #ffffff;
+    background-color: #2196f3;
+    box-shadow: 0 0 1rem #2196f3, 0 0 4rem #2196f3, 0 0 8rem #2196f3;
+    transition: all 1s ease 0s;
+    transition-delay: 0.2s;
+}
+
+.form button span{
+    position: absolute;
+    display: block;
+}
+
+.form button span:nth-child(1){
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 0.2rem;
+    background: linear-gradient(90deg, transparent, #2196f3);
+    animation: animate1 1s linear infinite;
+}
+
+@keyframes animate1 {
+    0%{
+        left: -100%;
+    }
+    50%, 100%{
+        left: 100%;
+    }
+}
+
+.form button span:nth-child(2){
+    top: -100%;
+    right: 0;
+    width: 0.2rem;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #2196f3);
+    animation: animate2 1s linear infinite;
+    animation-delay: 0.25s;
+}
+
+@keyframes animate2 {
+    0%{
+        top: -100%;
+    }
+    50%, 100%{
+        top: 100%;
+    }
+}
+
+.form button span:nth-child(3){
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 0.2rem;
+    background: linear-gradient(270deg, transparent, #2196f3);
+    animation: animate3 1s linear infinite;
+    animation-delay: 0.75s;
+}
+
+@keyframes animate3 {
+    0%{
+        right: -100%;
+    }
+    50%, 100%{
+        right: 100%;
+    }
+}
+
+
+.form button span:nth-child(4){
+    bottom: -100%;
+    left: 0;
+    width: 0.2rem;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #2196f3);
+    animation: animate4 1s linear infinite;
+    animation-delay: 1s;
+}
+
+@keyframes animate4 {
+    0%{
+        bottom: -100%;
+    }
+    50%, 100%{
+        bottom: 100%;
+    }
+}
+
+
+.form .message{
+    margin: 1.5rem 0 0;
+    color: #B3B3B3;
+    font-size: 1.2rem;
+}
+.form .message a{
+    color: #255784;
+    text-decoration: none;
+}
+
+.img-from img{
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width:998px) {
+    html{
+        font-size: 55%;
+    }
+    body{
+        background-position: center;
+    }
+}
+
+@media (max-width:768px) {
+    html{
+        font-size: 50%;
+    }
+}

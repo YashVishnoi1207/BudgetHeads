@@ -1,0 +1,79 @@
+.Images{
+    display: flex;
+    height: 45rem;
+}
+
+html{
+    font-size: 62.5%;
+    width: 100%;
+    height: 100%;
+}
+
+.left-side{
+    height: 100%;
+    width: 50%;
+    background-image: url(../Img/samsung\ z\ flip\ 3.jpg);
+    background-size: 100% 100%;
+    animation: slider1 12s infinite;
+}
+
+.right-side{
+    width: 50%;
+    height: 100%;
+    background-image: url(../Img/Apple_iPhone-13-Pro_Colors_09142021_big.jpg.large_2x-e1631645876731.jpg);
+    background-size: 100% 100%;
+    animation: slider2 12s infinite;
+}
+
+@keyframes slider1{
+    25%{background-image: url(../Img/google-pixel-6-green.jpeg);}
+    50%{background-image: url(../Img/Mi-11-Ultra.jpg);}
+    75%{background-image: url(../Img/Moto_Edge_Pro.jpg);}   
+}
+
+@keyframes slider2{
+    25%{background-image: url(../Img/samsungs21.jpeg);}
+    50%{background-image: url(../Img/ROG-Phone-5-Ultimate.jpg);}
+    75%{background-image: url(../Img/iQOO-8-91mobiles-1.jpeg);}
+}
+
+.home-article{
+    margin-bottom: 4rem;
+    /* border: 2px solid red; */
+}
+
+@media (max-width:998px){
+    html{
+        font-size: 40%;
+    }
+}
+
+@media (max-width:768px){
+    html{
+        font-size: 40%;
+    }
+    .home-articles{
+        width: 100%;
+    }
+    .Images{
+        flex-direction: column;
+    }
+    .left-side{
+        width: 100%;
+    }
+    .right-side{
+        width: 100%;
+    }
+    .home-article-img img{
+        height: 70px;
+        width: 100px;
+        
+    }
+    h3{
+        margin-bottom: 2.5rem;
+        margin-left: 1rem;
+    }
+    .Images{
+        height: 50rem;
+    }
+}

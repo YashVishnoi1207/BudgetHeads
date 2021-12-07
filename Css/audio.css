@@ -1,0 +1,58 @@
+.Images{
+    display: flex;
+    height: 45rem;
+}
+
+html{
+    font-size: 62.5%;
+    width: 100%;
+    height: 100%;
+}
+
+.left-side{
+    height: 100%;
+    width: 50%;
+    background-image: url(../Img/rog-cetra.jpg);
+    background-size: 100% 100%;
+    animation: slider1 12s infinite;
+}
+
+.right-side{
+    width: 50%;
+    height: 100%;
+    background-image: url(../Img/airpods-3-body.jpg);
+    background-size: 100% 100%;
+    animation: slider2 12s infinite;
+}
+
+@keyframes slider1{
+    25%{background-image: url(../Img/oppo_enco_m31_headphones_amazon_1590124764206.jpg);}
+    50%{background-image: url(../Img/alexa.jpg);}
+    75%{background-image: url(../Img/Motorola-Launches-New-AmphisoundX-Soundbars-Starting-at-Rs.7499.jpg);}   
+}
+
+@keyframes slider2{
+    25%{background-image: url(../Img/Headphones.jpg);}
+    50%{background-image: url(../Img/Sony-SRS-XB402M-body.jpg);}
+    75%{background-image: url(../Img/Pixel-Buds-A.jpg.fdmdownload);}
+}
+
+
+@media (max-width:998px){
+    html{
+        font-size: 55%;
+    }
+    body{
+        background-position: center;
+    }
+}
+
+@media (max-width:768px){
+    html{
+        font-size: 20%;
+    }
+    .home-articles{
+        width: 100%;
+        margin-left: 0;
+    }
+}
