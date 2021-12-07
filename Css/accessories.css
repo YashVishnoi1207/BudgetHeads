@@ -25,6 +25,10 @@ html{
     animation: slider2 12s infinite;
 }
 
+.home-article{
+    margin-bottom: 4rem;
+}
+
 @keyframes slider1{
     50%{background-image: url(../Img/Razer-Gigantus-V2-feat..jpg);}
     /* 50%{background-image: url(../Img/alexa.jpg);}
@@ -37,21 +41,32 @@ html{
     75%{background-image: url(../Img/Pixel-Buds-A.jpg.fdmdownload);} */
 }
 
-@media (max-width:998px){
-    html{
-        font-size: 55%;
-    }
-    body{
-        background-position: center;
-    }
-}
-
 @media (max-width:768px){
     html{
-        font-size: 20%;
+        font-size: 40%;
     }
     .home-articles{
         width: 100%;
-        margin-left: 0;
+    }
+    .Images{
+        flex-direction: column;
+    }
+    .left-side{
+        width: 100%;
+    }
+    .right-side{
+        width: 100%;
+    }
+    .home-article-img img{
+        height: 70px;
+        width: 100px;
+        
+    }
+    h3{
+        margin-bottom: 2.5rem;
+        margin-left: 1rem;
+    }
+    .Images{
+        height: 50rem;
     }
 }
